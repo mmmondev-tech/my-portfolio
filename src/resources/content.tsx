@@ -2,21 +2,21 @@ import { About, Blog, Gallery, Home, Newsletter, Person, Social, Work } from "@/
 import { Line, Row, Text } from "@once-ui-system/core";
 
 const person: Person = {
-  firstName: "Selene",
-  lastName: "Yu",
-  name: `Selene Yu`,
-  role: "Design Engineer",
-  avatar: "/images/avatar.jpg",
-  email: "example@gmail.com",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  firstName: "May",
+  lastName: "Myat Mon",
+  name: `May Myat Mon`,
+  role: "DevOps Engineer",
+  avatar: "/images/profile.jpg",
+  email: "may@gravitas.my",
+  location: "Asia/Bangkok", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  languages: ["English", "Burmese"], // optional: Leave the array empty if you don't want to display languages
   locale: "en", // BCP 47 language tag for the HTML lang attribute, e.g., 'en', 'ja', 'zh-TW'
 };
 
 const newsletter: Newsletter = {
-  display: true,
+  display: false,
   title: <>Subscribe to {person.firstName}'s Newsletter</>,
-  description: <>My weekly newsletter about creativity and engineering</>,
+  description: <>My weekly newsletter about cloud infrastructure and engineering</>,
 };
 
 const social: Social = [
@@ -24,27 +24,9 @@ const social: Social = [
   // Import new icons in /once-ui/icons.ts
   // Set essentials: true for links you want to show on the about page
   {
-    name: "GitHub",
-    icon: "github",
-    link: "https://github.com/once-ui-system",
-    essential: true,
-  },
-  {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
-    essential: true,
-  },
-  {
-    name: "Instagram",
-    icon: "instagram",
-    link: "https://www.instagram.com/once_ui/",
-    essential: false,
-  },
-  {
-    name: "Threads",
-    icon: "threads",
-    link: "https://www.threads.com/@once_ui",
+    link: "https://www.linkedin.com/in/mmmon",
     essential: true,
   },
   {
@@ -61,24 +43,24 @@ const home: Home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>,
+  headline: <>Building reliable cloud infrastructure that ships products</>,
   featured: {
     display: true,
     title: (
       <Row gap="12" vertical="center">
-        <strong className="ml-4">Once UI</strong>{" "}
+        <strong className="ml-4">Matrix Concepts Holdings</strong>{" "}
         <Line background="brand-alpha-strong" vert height="20" />
         <Text marginRight="4" onBackground="brand-medium">
           Featured work
         </Text>
       </Row>
     ),
-    href: "/work/building-once-ui-a-customizable-design-system",
+    href: "/work/matrix-concepts-holdings-website",
   },
   subline: (
     <>
       I'm {person.firstName}, a {person.role.toLowerCase()} at{" "}
-      <Text as="span" size="xl" weight="strong">ONCE UI</Text>, where I craft intuitive <br /> user experiences. After hours, I build my own projects.
+      <Text as="span" size="xl" weight="strong">Gravitas Digital</Text>, with 6+ years of experience <br /> launching 10+ projects for 20 customer companies.
     </>
   ),
 };
@@ -96,7 +78,7 @@ const about: About = {
     display: true,
   },
   calendar: {
-    display: true,
+    display: false,
     link: "https://cal.com",
   },
   intro: {
@@ -104,9 +86,14 @@ const about: About = {
     title: "Introduction",
     description: (
       <>
-        {person.firstName} is a {person.location.split("/")[1]?.replace("_", " ")}-based {person.role.toLowerCase()} with a passion for transforming complex challenges
-        into simple, elegant design solutions. Their work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        Experienced technical leader with over 6 years of work experience, including 1 year as a
+        Product Owner and 1 year as a DevOps Engineer. Successfully launched over 10 projects for 20
+        customer companies. Hands-on experience with AWS cloud infrastructure, including server
+        management, deployment, and maintenance of UAT and production environments. Proficient in
+        DNS and domain management through Cloudflare and Namecheap, and experienced in collaborating
+        with development teams to provision infrastructure and support deployments. Strong
+        background in web development using Next.js and WordPress CMS, and skilled in project
+        planning, technical architecture design, and optimizing system performance.
       </>
     ),
   },
@@ -115,41 +102,103 @@ const about: About = {
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "Gravitas Digital Company (Malaysia)",
+        timeframe: "2024 - Present",
+        role: "DevOps Engineer",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            Manage AWS cloud infrastructure, including EC2 instances, server configuration, and
+            maintenance of UAT and production environments. Monitor server performance and
+            collaborate with development teams to support application deployments.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Configure and manage DNS and domain services through Cloudflare and Namecheap, ensuring
+            optimal performance and reliability of web services.
+          </>,
+          <>
+            Develop and maintain websites using Next.js and WordPress CMS. Design and develop a PMS
+            (Property Management System) with a focus on technical architecture and scalable data
+            design.
+          </>,
+          <>
+            Implement backup strategies and security controls, and document infrastructure
+            configurations and deployment procedures to protect critical systems.
           </>,
         ],
-        images: [
-          // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
-        ],
+        images: [],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "Myanmar Information Technology Company (Myanmar)",
+        timeframe: "2022 - 2024",
+        role: "Product Owner",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            Supervised 3 team leads and 12 team members, overseeing the successful execution of 10
+            projects.
           </>,
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            Strategized and coordinated one-week sprints for 3 teams, consistently delivering live
+            updates on progress each week.
+          </>,
+          <>
+            Collaborated with stakeholders to identify and prioritize pain points in existing
+            features, leading to a 40% reduction in customer-reported issues and enhanced product
+            usability.
+          </>,
+          <>
+            Led the successful launch of an e-learning platform at Yangon's largest universities,
+            including UMFCCI and UFL.
+          </>,
+        ],
+        images: [],
+      },
+      {
+        company: "Myanmar Information Technology Company (Myanmar)",
+        timeframe: "2020 - 2022",
+        role: "Team Leader",
+        achievements: [
+          <>
+            Piloted a team of 20 in the end-to-end development of a cloud-based HR solution with
+            Flutter, achieving deployment to 20+ clients and boosting user satisfaction ratings by
+            25%.
+          </>,
+          <>
+            Deployed new features and configurations in collaboration with the development team,
+            enhancing operational efficiency by 20% and cutting technical issue resolution by 40%.
+          </>,
+          <>
+            Engineered project UI with UI/UX teams using Figma, integrating extensive customer
+            feedback, resulting in a 25% increase in positive user reviews.
+          </>,
+          <>
+            Tested and integrated facial recognition and fingerprint devices for attendance and
+            temperature tracking.
+          </>,
+        ],
+        images: [],
+      },
+      {
+        company: "Myanmar Information Technology Company (Myanmar)",
+        timeframe: "2018 - 2020",
+        role: "Mobile Developer",
+        achievements: [
+          <>
+            Developed a hospital booking application using the Ionic framework, reducing
+            administrative tasks by 30% and improving patient onboarding efficiency by 50%, while
+            integrating Zoom for video consultations.
+          </>,
+          <>
+            Enhanced the mobile app's user experience by collaborating with UI/UX teams,
+            implementing Google Maps for navigation, and optimizing frontend API integrations for a
+            more responsive interface.
+          </>,
+          <>
+            Designed and implemented HR training modules, boosting employee satisfaction by 30% and
+            reducing turnover rates.
+          </>,
+          <>
+            Successfully launched the app on the App Store and Play Store after rigorous UAT
+            testing, ensuring seamless accessibility for end users.
           </>,
         ],
         images: [],
@@ -158,15 +207,23 @@ const about: About = {
   },
   studies: {
     display: true, // set to false to hide this section
-    title: "Studies",
+    title: "Education & Certificates",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
+        name: "TaungNgu Computer University",
+        description: <>Bachelor of Computer Science, Myanmar, 2012.</>,
       },
       {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "Advanced Computing Training School",
+        description: <>Professional Diploma in Java Programming, 2018.</>,
+      },
+      {
+        name: "PADC",
+        description: <>Flutter Full-Term Course, 2021.</>,
+      },
+      {
+        name: "IT Current",
+        description: <>C# .NET Developer Course, 2018.</>,
       },
     ],
   },
@@ -175,60 +232,119 @@ const about: About = {
     title: "Technical skills",
     skills: [
       {
-        title: "Figma",
+        title: "Cloud Platforms",
         description: (
-          <>Able to prototype in Figma with Once UI with unnatural speed.</>
+          <>
+            Managing AWS infrastructure (EC2, S3, DynamoDB) for UAT and production environments, with
+            experience on Microsoft Azure.
+          </>
         ),
         tags: [
           {
-            name: "Figma",
-            icon: "figma",
-          },
-        ],
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
+            name: "AWS",
+            icon: "aws",
           },
           {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
+            name: "S3",
+            icon: "s3",
+          },
+          {
+            name: "DynamoDB",
+            icon: "dynamodb",
+          },
+          {
+            name: "Azure",
+            icon: "microsoft",
           },
         ],
+        images: [],
       },
       {
-        title: "Next.js",
+        title: "DevOps & Tools",
         description: (
-          <>Building next gen apps with Next.js + Once UI + Supabase.</>
+          <>Version control, DNS and domain management for reliable web services.</>
         ),
         tags: [
           {
-            name: "JavaScript",
-            icon: "javascript",
+            name: "Git",
+            icon: "git",
           },
+          {
+            name: "Cloudflare",
+            icon: "cloudflare",
+          },
+          {
+            name: "Namecheap",
+            icon: "namecheap",
+          },
+        ],
+        images: [],
+      },
+      {
+        title: "Programming & Frameworks",
+        description: (
+          <>Building web and mobile apps across frontend, backend APIs, and CMS platforms.</>
+        ),
+        tags: [
           {
             name: "Next.js",
             icon: "nextjs",
           },
           {
-            name: "Supabase",
-            icon: "supabase",
+            name: "WordPress",
+            icon: "wordpress",
           },
-        ],
-        // optional: leave the array empty if you don't want to display images
-        images: [
           {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
+            name: "Flutter",
+            icon: "flutter",
+          },
+          {
+            name: "Dart",
+            icon: "dart",
+          },
+          {
+            name: "Ionic",
+            icon: "ionic",
+          },
+          {
+            name: "Angular",
+            icon: "angular",
+          },
+          {
+            name: "Java",
+            icon: "java",
+          },
+          {
+            name: "Python",
+            icon: "python",
           },
         ],
+        images: [],
+      },
+      {
+        title: "Databases",
+        description: <>Designing scalable data models across SQL and NoSQL databases.</>,
+        tags: [
+          {
+            name: "PostgreSQL",
+            icon: "postgresql",
+          },
+          {
+            name: "MSSQL",
+            icon: "microsoft",
+          },
+          {
+            name: "DynamoDB",
+            icon: "dynamodb",
+          },
+        ],
+        images: [],
+      },
+      {
+        title: "Soft Skills",
+        description: <>Teamwork, Problem-Solving, Communication, and Leadership.</>,
+        tags: [],
+        images: [],
       },
     ],
   },
@@ -237,7 +353,7 @@ const about: About = {
 const blog: Blog = {
   path: "/blog",
   label: "Blog",
-  title: "Writing about design and tech...",
+  title: "Writing about DevOps and tech...",
   description: `Read what ${person.name} has been up to recently`,
   // Create new blog posts by adding a new .mdx file to app/blog/posts
   // All posts will be listed on the /blog route
@@ -247,7 +363,7 @@ const work: Work = {
   path: "/work",
   label: "Work",
   title: `Projects – ${person.name}`,
-  description: `Design and dev projects by ${person.name}`,
+  description: `DevOps and development projects by ${person.name}`,
   // Create new project pages by adding a new .mdx file to app/blog/posts
   // All projects will be listed on the /home and /work routes
 };

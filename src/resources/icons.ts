@@ -27,9 +27,22 @@ import {
   SiNextdotjs,
   SiFigma,
   SiSupabase,
+  SiAmazonwebservices,
+  SiCloudflare,
+  SiNamecheap,
+  SiGit,
+  SiFlutter,
+  SiDart,
+  SiWordpress,
+  SiIonic,
+  SiAngular,
+  SiPython,
+  SiPostgresql,
+  SiAmazondynamodb,
+  SiAmazons3,
 } from "react-icons/si";
 
-import { FaDiscord, FaGithub, FaLinkedin, FaX, FaThreads, FaInstagram, FaXTwitter, FaFacebook, FaPinterest, FaWhatsapp, FaReddit, FaTelegram, } from "react-icons/fa6";
+import { FaDiscord, FaGithub, FaLinkedin, FaX, FaThreads, FaInstagram, FaXTwitter, FaFacebook, FaPinterest, FaWhatsapp, FaReddit, FaTelegram, FaJava, FaMicrosoft } from "react-icons/fa6";
 
 export const iconLibrary: Record<string, IconType> = {
   arrowUpRight: HiArrowUpRight,
@@ -64,6 +77,21 @@ export const iconLibrary: Record<string, IconType> = {
   reddit: FaReddit,
   telegram: FaTelegram,
   instagram: FaInstagram,
+  aws: SiAmazonwebservices,
+  cloudflare: SiCloudflare,
+  namecheap: SiNamecheap,
+  git: SiGit,
+  flutter: SiFlutter,
+  dart: SiDart,
+  wordpress: SiWordpress,
+  ionic: SiIonic,
+  angular: SiAngular,
+  python: SiPython,
+  postgresql: SiPostgresql,
+  dynamodb: SiAmazondynamodb,
+  s3: SiAmazons3,
+  java: FaJava,
+  microsoft: FaMicrosoft,
 };
 
 export type IconLibrary = typeof iconLibrary;
